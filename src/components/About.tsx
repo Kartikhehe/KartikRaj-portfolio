@@ -6,7 +6,7 @@ const About = () => {
       <div className="about-me">
         <h3 className="title">About Me</h3>
         <p className="para">
-          I'm a third-year undergraduate at IIT Kanpur who builds
+          I'm a final-year undergraduate at IIT Kanpur who builds
           production-grade software and intelligent systems end to end. From
           full-stack platforms (React, FastAPI, Node.js) to LLM pipelines,
           machine learning, and computer vision, I love turning hard problems

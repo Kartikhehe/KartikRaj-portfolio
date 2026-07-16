@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useLayoutEffect } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import HoverLinks from "./HoverLinks";
 import { gsap } from "gsap";
@@ -9,7 +9,11 @@ gsap.registerPlugin(ScrollSmoother, ScrollTrigger);
 export let smoother: ScrollSmoother;
 
 const Navbar = () => {
-  useEffect(() => {
+  // Must run as a layout effect so ScrollSmoother is created BEFORE Work's
+  // useGSAP (also a layout effect) sets up its pinned ScrollTrigger — otherwise
+  // the pin binds to the window instead of the smooth-scroll content and the
+  // following sections scroll over the pinned Work section.
+  useLayoutEffect(() => {
     smoother = ScrollSmoother.create({
       wrapper: "#smooth-wrapper",
       content: "#smooth-content",

@@ -18,7 +18,7 @@ const Career = () => {
                 <h4>WebGIS Developer Intern</h4>
                 <h5>TerrAqua UAV Pvt. Ltd.</h5>
               </div>
-              <h3>2025</h3>
+              <h3>Jun '25</h3>
             </div>
             <p>
               Built a WebGIS platform (React.js + Leaflet) that projects remote
@@ -35,7 +35,7 @@ const Career = () => {
                 <h4>Full-Stack Developer Intern</h4>
                 <h5>Biofuel Logistics · IIT Kanpur</h5>
               </div>
-              <h3>2026</h3>
+              <h3>Jan–Apr '26</h3>
             </div>
             <p>
               Co-built and publicly deployed an end-to-end UCO route
@@ -53,10 +53,10 @@ const Career = () => {
                 <h4>Software & Data Engineering Intern</h4>
                 <h5>I'mBesideYou Inc. · Japan</h5>
               </div>
-              <h3>NOW</h3>
+              <h3>May–Jul '26</h3>
             </div>
             <p>
-              Building a full-stack AI sales-intelligence platform (React 18,
+              Built a full-stack AI sales-intelligence platform (React 18,
               FastAPI, Firestore, Cloud Run) with LLM circuit-breakers and a
               multi-model AI fallback pipeline (Gemini/Claude/GPT-4o) that parses
               Zoom transcripts for meeting intelligence. Shipped a live 5-signal
