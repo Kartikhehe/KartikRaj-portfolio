@@ -60,6 +60,9 @@ const projects = [
 
 const Work = () => {
   useGSAP(() => {
+  // On touch/mobile the pinned horizontal scroll fights native scrolling and
+  // becomes jittery — skip it there and let the cards stack & scroll normally.
+  if (window.innerWidth <= 1024) return;
   let translateX: number = 0;
 
   function setTranslateX() {
